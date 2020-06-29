@@ -36,13 +36,13 @@ class Owner
   end
 
   def walk_dogs
-    Dog.all.map! do |dog|
+    Dog.all.map do |dog|
       dog.mood = "happy"
     end
   end
 
   def feed_cats
-    Cat.all.map! do |cat|
+    Cat.all.map do |cat|
       cat.mood = "happy"
     end
   end
