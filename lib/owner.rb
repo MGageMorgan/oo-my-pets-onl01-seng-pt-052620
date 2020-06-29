@@ -3,6 +3,7 @@ class Owner
 
   @@all = []
 
+  # Instance Methods
   def initialize(name)
     @name = name
     @@all << self
@@ -16,6 +17,11 @@ class Owner
     "I am a human."
   end
 
+  def cats
+    Cat.all.select {|cats| cat.owner == self}
+  end
+
+  # Class Methods
   def self.all
     @@all
   end
