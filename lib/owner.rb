@@ -41,7 +41,7 @@ class Owner
     end
   end
 
-  def walk_dogs
+  def feed_cats
     Cat.all.map! do |cat|
       cat.mood = "happy"
     end
