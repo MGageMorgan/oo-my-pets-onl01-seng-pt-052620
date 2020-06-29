@@ -41,6 +41,12 @@ class Owner
     end
   end
 
+  def walk_dogs
+    Cat.all.map! do |cat|
+      cat.mood = "happy"
+    end
+  end
+
   # Class Methods
   def self.all
     @@all
