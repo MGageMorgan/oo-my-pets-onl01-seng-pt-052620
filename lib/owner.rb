@@ -48,11 +48,11 @@ class Owner
   end
 
   def sell_pets
-    Cat.all.map! do |cat|
+    Cat.all.map do |cat|
       cat.mood = "nervous"
     end
 
-    Dog.all.map! do |dog|
+    Dog.all.map do |dog|
       dog.mood = "nervous"
     end
   end
