@@ -16,6 +16,8 @@ class Owner
     "I am a human."
   end
 
-  self.all
+  def self.all
+    @@all
+  end
 
 end
