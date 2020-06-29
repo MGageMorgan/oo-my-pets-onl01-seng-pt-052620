@@ -35,6 +35,12 @@ class Owner
    dog.owner = self
   end
 
+  def walk_dogs
+    @@all.map! do |dog|
+      dog.mood = "happy"
+    end
+  end
+
   # Class Methods
   def self.all
     @@all
