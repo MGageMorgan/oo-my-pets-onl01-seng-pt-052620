@@ -50,10 +50,12 @@ class Owner
   def sell_pets
     Cat.all.map do |cat|
       cat.mood = "nervous"
+      cat.owner = nil
     end
 
     Dog.all.map do |dog|
       dog.mood = "nervous"
+      dog.owner = nil
     end
   end
 
