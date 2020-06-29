@@ -55,8 +55,6 @@ class Owner
     Dog.all.map! do |dog|
       dog.mood = "nervous"
     end
-
-    @@all.clear
   end
 
   # Class Methods
