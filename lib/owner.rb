@@ -17,5 +17,5 @@ class Owner
   end
 
   self.all
-  
+
 end
